@@ -47,9 +47,12 @@ p {
   float: left;
   margin: 0 10px 10px 0;
   list-style: none;
-  width: 35px;
-  height: 30px;
-  padding-top: 10px;
+  font-size: 40px;
+  min-width: 40px;
+  min-height: 40px;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 10px;
   background: #ffffff;
   color: #65ffe0;
   cursor: pointer;
@@ -58,6 +61,8 @@ p {
   border-radius: 5px;
   -khtml-border-radius: 5px;
   border: solid 1px #ffffff; }
+  #alphabet li span {
+    vertical-align: middle; }
   #alphabet li:hover {
     background: #65ffe0;
     border: solid 1px #ffffff;
@@ -124,7 +129,11 @@ button {
 
 @media (max-width: 767px) {
   #alphabet {
-    padding: 0 0 0 15px; } }
+    padding: 0 0 0 15px; }
+    #alphabet li {
+      padding: 0 10px;
+      font-size: 2.6em;
+      line-height: 2.6em; } }
 @media (max-width: 480px) {
   #alphabet {
     padding: 0 0 0 25px; } }

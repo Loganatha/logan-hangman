@@ -38,7 +38,7 @@ window.onload = function() {
     for (var i = 0; i < alphabet.length; i++) {
       letters.id = 'alphabet';
       list = document.createElement('li');
-      list.id = 'letter';
+      list.className = 'letter';
       list.innerHTML = alphabet[i];
       check();
       myButtons.appendChild(letters);
