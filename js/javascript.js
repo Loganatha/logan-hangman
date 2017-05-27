@@ -322,7 +322,7 @@ window.onload = function() {
   }
 
   // placing our call the play() at the outer-most level insite the
-  // window.onload function will fire play() at line 201 when the page loads
+  // window.onload function will fire play() at line 281 when the page loads
   play();
 
   /*
