@@ -259,7 +259,7 @@ window.onload = function() {
       [
         "youre a wizard, joshua",
         "drop em in his memory",
-        "tries in a something, under something-something"
+        "lives in a something, under something-something"
       ]
     ];
 
