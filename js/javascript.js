@@ -1,4 +1,12 @@
 window.onload = function() {
+  /*
+  * adds replaceAll functionality to javacript string primitive
+  */
+  String.prototype.replaceAll = function(search, replacement) {
+    var target = this;
+    return target.replace(new RegExp(search, 'g'), replacement);
+  };
+
   var alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
   var categories; // Array of topics
@@ -225,7 +233,7 @@ window.onload = function() {
 
     chosenCategory = categories[Math.floor(Math.random() * categories.length)];
     word = chosenCategory[Math.floor(Math.random() * chosenCategory.length)];
-    word = word.replace(/\s/g, "-");
+    word = word.replaceAll(/\s/g, "-");
     buttons();
 
     guesses = [];
@@ -257,13 +265,13 @@ window.onload = function() {
         "i just left there"
       ],
       [
-        "youre a wizard, joshua",
-        "drop em in his memory",
+        "you're a wizard, joshua",
+        "drop 'em in his memory",
         "lives in a something, under something-something"
       ]
     ];
 
-    revWord = word.replace("-", " ");
+    revWord = word.replaceAll("-", " ");
     console.log(revWord);
     var catagoryIndex = categories.indexOf(chosenCategory);
     var hintIndex = chosenCategory.indexOf(revWord);
