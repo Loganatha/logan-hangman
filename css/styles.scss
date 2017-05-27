@@ -1,6 +1,6 @@
-$orange: #ff8665;
-$green: #c1ff65;
-$blue: #65ffe0;
+$burgundy: #97384b;
+$green: #969036;
+$blue: #3a5e89;
 $grey: #c4c4c4;
 $white: #ffffff;
 $base-color: $blue;
@@ -57,6 +57,12 @@ body {
   height:100%;
   text-align:center;
   font-size:18px;
+  &.fail {
+    background-color: $burgundy;
+  }
+  &.success {
+    background-color: $green;
+  }
 }
 
 .wrappper {
