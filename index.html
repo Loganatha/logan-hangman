@@ -1,15 +1,19 @@
+<!DOCTYPE html>
 <html class="">
 <head>
   <title>Logan's Hangman</title>
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.min.css">
+  <link rel="stylesheet" type="text/css" href="https://code.jquery.com/ui/1.12.1/themes/redmond/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
   <script src="js/javascript.js"></script>
 </head>
 <body>
   <div class="wrapper">
     <h1>Hangman</h1>
-    <h2>Click the letters below to guess.</p>
+    <h2>Click the letters below to guess.</h2>
   </div>
   <div class="wrapper">
     <div id="buttons">
@@ -21,9 +25,17 @@
     <p id="clue">(Click the 'Clue' button if you need to get one.)</p>
     <canvas id="stickman">HTML5 canvas not supported. Get a modern browser, huh?</canvas>
     <div class="container">
+      <button id="instructions">Instructions</button>
       <button id="hint">Clue</button>
       <button id="reset">Again!</button>
+      <button id="about">About</button>
     </div>
+  </div>
+  <div id="inst-modal" title="Instructions">
+    <p>Your goal is to guess what word the hangman has chosen. If you guess all the letters correctly, you win. If you run out of tries.. Well, ya know.</p>
+  </div>
+  <div id="about-modal" title="About">
+    <p>You gotta crawl before you ball.</p>
   </div>
 </body>
 </html>

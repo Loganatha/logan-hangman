@@ -376,3 +376,36 @@ window.onload = function() {
     play();
   }
 }
+
+$( function() {
+  $( "#inst-modal" ).dialog({
+    autoOpen: false,
+    show: {
+      effect: "blind",
+      duration: 1000
+    },
+    hide: {
+      effect: "blind",
+      duration: 1000
+    }
+  });
+  $( "#instructions" ).on( "click", function() {
+    $( "#inst-modal" ).dialog( "open" );
+  });
+
+  $( "#about-modal" ).dialog({
+    autoOpen: false,
+    show: {
+      effect: "blind",
+      duration: 1000
+    },
+    hide: {
+      effect: "blind",
+      duration: 1000
+    }
+  });
+
+  $( "#about" ).on( "click", function() {
+    $( "#about-modal" ).dialog( "open" );
+  });
+} );
